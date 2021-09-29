@@ -11,7 +11,7 @@ public class LedController {
 
     @RequestMapping("/")
     public String greeting() {
-        return "Hello world";
+        return "Hello world!";
     }
 
     @RequestMapping("/light")
@@ -22,6 +22,8 @@ public class LedController {
         }
 
         pin.toggle();
+
         return "OK";
     }
+
 }
